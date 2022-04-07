@@ -6,6 +6,7 @@ const tradingCardData = [
     skill: 'video games',
     imgUrl: '/static/img/balloonicorn.jpg',
   },
+
 ];
 
 function TradingCard(props) {
@@ -31,4 +32,14 @@ ReactDOM.render(
 ReactDOM.render(
   <TradingCard name="Llambda" skill="knitting scarves" imgUrl="/static/img/llambda.jpg" />,
   document.querySelector('#llambda'),
+);
+
+ReactDOM.render( 
+  <TradingCard name="merge" skill="chewing bubble gum" imgUrl="/static/img/merge.png" />,
+  document.querySelector('#merge'),
+);
+
+ReactDOM.render( 
+  <TradingCard name="shortstack-overflow" skill="jumping jacks" imgUrl="/static/img/shortstack-overflow.jpeg" />,
+  document.querySelector('#shortstack'),
 );
